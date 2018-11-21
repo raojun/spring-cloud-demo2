@@ -7,7 +7,6 @@ import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.cloud.client.serviceregistry.Registration;
 import org.springframework.stereotype.Component;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
@@ -24,8 +23,6 @@ public class HelloService {
     private DiscoveryClient client;
     @Autowired
     private Registration registration;
-    @Autowired
-    RestTemplate restTemplate;
 
     public Object helloTest() {
         ServiceInstance instance = serviceInstance();

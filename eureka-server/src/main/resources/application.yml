@@ -15,4 +15,4 @@
 #    name: eurka-server
 spring:
   profiles:
-    active: peer1
+    active: peer2
